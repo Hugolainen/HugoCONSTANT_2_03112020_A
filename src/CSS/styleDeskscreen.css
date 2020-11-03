@@ -1,0 +1,23 @@
+@font-face 
+{
+    font-family: 'Raleway-Medium';
+    src: url('src\Font\Raleway-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'droid_sansregular', 'Arial', sans-serif;
+    background-color: #F2F2;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+}
+    
