@@ -1,23 +1,83 @@
 @font-face 
 {
     font-family: 'Raleway-Medium';
-    src: url('src\Font\Raleway-Medium.ttf');
+    src: url('/src/Font/Raleway-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 body
 {
-    font-family: 'droid_sansregular', 'Arial', sans-serif;
-    background-color: #F2F2;
+    font-family: 'Raleway-Medium', 'droid_sansregular', 'Arial', sans-serif;
+}
+
+
+img{
+    float: left;
 }
 
 .container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    align-content: stretch;
 }
-    
+
+.item {
+    width: 100px;
+    height: 70px;
+    background-color: black;
+}
+
+/* Header */
+.item:nth-child(1){
+    background-color: #00BF;
+    width: 50%;
+}
+
+/* Navigation */
+.item:nth-child(2){
+    background-color: rgb(16, 187, 0);
+    width: 30%;
+}
+
+/* Sign up */
+.item:nth-child(3){
+    background-color: rgb(16, 187, 255);
+    width: 20%;
+}
+
+/* Search bar */
+.item:nth-child(4){
+    background-color: rgb(187, 0, 16);
+    width: 100%;
+}
+
+/* Filter */
+.item:nth-child(5){
+    background-color: rgb(187, 255, 16);
+    width: 100%;
+}
+
+/* Accomodations */
+.item:nth-child(6){
+    background-color: rgb(166, 166, 180);
+    width: 70%;
+}
+
+/* Aside */
+.item:nth-child(7){
+    background-color: rgb(29, 29, 68);
+    width: 30%;
+}
+
+/* Activites */
+.item:nth-child(8){
+    background-color: #00BF;
+    width: 100%;
+}
+
+/* Footer */
+.item:nth-child(9){
+    background-color: rgb(106, 187, 0);
+    width: 100%;
+}
