@@ -8,27 +8,39 @@
         <script src="https://kit.fontawesome.com/6fcdcaea13.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class=container>
-            <!-- Logo -->
-            <div class="menuBar">
-                <div> 
-                    <header>
-                        <figure> <img id="logo" src="/src/Images/Reservia.png" alt="logo Reservia"/> </figure>
-                    </header> 
-                </div>
+    <body class=bodyFlex>
+        <header class = "mainHeader">
+            <div class="container">
+                <h1 class="mh-logo">
+                    <img src="/src/Images/Reservia.png" width="170" height="95" alt="logo Reservia"/>
+                </h1>
 
                 <div>
-                    Accomodation
+                    <p>
+                            
+                    </p>
                 </div>
 
-                <div>
-                    Activities
-                </div>
+                <nav class="mainNavigation">
+                    <ul class="mn-list">
+                        <li>
+                            <a href="#goToAccommodation"> Accomodations </a>
+                        </li>
+                        <li>
+                            <a href="#goToActivities"> Activities </a>
+                        </li>
+                    </ul>
+                </nav>
 
-                <div>
-                    Sign up
-                </div>
+                <nav class="mainNavigation">
+                    <ul class="mn-signUp">
+                        <li>
+                            <a href="#"> Sign up </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
             <!-- Search -->
             <div class="item">
@@ -64,14 +76,16 @@
                 <p> More than 500 accommodations are available in this city</p>
             </div>
 
-            <!-- Accomodations -->
-            <div class="main">
+            <!-- Accommodations -->
+            <div class="main" id="goToAccommodation">
                 <div class="accommodations"> 
                     <h2> Accomodations in Marseille </h2>
                     <div> 1 </div>
                     <div> 2 </div>
                     <div> 3 </div>
                     <div> 4 </div>
+                    <div> 5 </div>
+                    <div> 6 </div>
                     <h3> Show more </h3>
                 </div>
 
@@ -84,7 +98,7 @@
             </div>
 
             <!-- Activities -->
-            <div class="activities">
+            <div class="activities" id="goToActivities">
                 <h2> Activities in Marseille </h2>
                 <div> 1 </div>
                 <div> 2 </div>
