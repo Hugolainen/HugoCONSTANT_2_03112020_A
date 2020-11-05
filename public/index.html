@@ -8,70 +8,83 @@
         <script src="https://kit.fontawesome.com/6fcdcaea13.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class=container>
-            <!-- Logo -->
-            <div class="menuBar">
-                <div> 
-                    <header>
-                        <figure> <img id="logo" src="/src/Images/Reservia.png" alt="logo Reservia"/> </figure>
-                    </header> 
-                </div>
+    <body class=bodyFlex>
+        <header class = "mainHeader">
+                <h1 class="mh-logo">
+                    <img src="/src/Images/Reservia.png" width="170" height="95" alt="logo Reservia"/>
+                </h1>
 
-                <div>
-                    Accomodation
-                </div>
+                <nav class="mainNavigation">
+                    <ul class="navList">
+                        <li>
+                            <a href="#goToAccommodation"> Accomodations </a>
+                        </li>
+                        <li>
+                            <a href="#goToActivities"> Activities </a>
+                        </li>
+                    </ul>
+                </nav>
 
-                <div>
-                    Activities
-                </div>
+                <nav class="mainNavigation">
+                    <h1>
+                        <a href="#"> Sign up </a>
+                    </h1>
+                </nav>
+        </header>
 
-                <div>
-                    Sign up
-                </div>
+        <!-- SearchBar -->
+        <div class="mainSearchBar">
+            <h2> Find a place for your dream vacation </h2>
+            <p> Downtown or in nature </p>
+
+            <div class="searchBar">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Search..">
+                <button type="submit"> Search </button>                
             </div>
+        </div>
 
-            <!-- Search -->
-            <div class="item">
-                <h2> Find a place for your dream vacation </h2>
-                <p> Downtown or in nature </p>
-                <p> SearchBar </p>
-            </div>
+        <!-- Filter -->
+        <div class="mainfilter">
+            <h2> 
+                Filters
+            </h2>
 
-            <!-- Filter -->
-            <div class="filter">
-                <div> 
-                    Filters
-                </div>
-
-                <div>
+            <ul class="filterList">
+                <li>
+                    <i class="fas fa-money-bill-wave"></i>
                     Low cost
-                </div>
-
-                <div>
+                </li>
+                <li>
+                    <i class="fas fa-child"></i>
                     Family-friendly
-                </div>
-
-                <div>
+                </li>
+                <li>
+                    <i class="fas fa-heart"></i>
                     Romantic
-                </div>
-
-                <div>
+                </li>
+                <li>
+                    <i class="fas fa-dog" ></i>
                     Pets allowed
-                </div>
-            </div>
+                </li>
+            </ul>
+        </div>
 
-            <div>
-                <p> More than 500 accommodations are available in this city</p>
-            </div>
+        <div id="infoIcon">
+            <i class="fas fa-info-circle"></i>
+            More than 500 accommodations are available in this city
+        </div>    
 
-            <!-- Accomodations -->
-            <div class="main">
+            <!-- Accommodations -->
+            <div class="main" id="goToAccommodation">
                 <div class="accommodations"> 
                     <h2> Accomodations in Marseille </h2>
                     <div> 1 </div>
                     <div> 2 </div>
                     <div> 3 </div>
                     <div> 4 </div>
+                    <div> 5 </div>
+                    <div> 6 </div>
                     <h3> Show more </h3>
                 </div>
 
@@ -84,7 +97,7 @@
             </div>
 
             <!-- Activities -->
-            <div class="activities">
+            <div class="activities" id="goToActivities">
                 <h2> Activities in Marseille </h2>
                 <div> 1 </div>
                 <div> 2 </div>

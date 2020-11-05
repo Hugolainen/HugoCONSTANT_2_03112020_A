@@ -9,59 +9,231 @@
 body
 {
     font-family: 'Raleway-Medium', 'droid_sansregular', 'Arial', sans-serif;
+    min-height: 100vh;
+    width: 80vw;
+    min-width: 800px;
+    max-width: 1720px;
+    margin: auto;
 }
 
 #logo{
-    float: left;
-    max-width: 200px;
-    height: auto;
-    width:25%;
+    max-height: 80px;
+    height: 6vh;
+    width: auto;
+    text-align: left;
 }
 
-.sideBySide{
-    display: inline-block;
-    padding: 1em 2em;
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-h1{
-    color: #0065FC;
-    font-weight: lighter;
-    font-size: 1em;
-}
-
-.container{
+/* Main flex container */
+.bodyFlex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.item {
-    height: auto;
+/* ****************** */
+/* Menu bar with logo */
+/*                    */
+.mainHeader {
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-/* 1st item : menu bar */
-.menuBar{
+/* Sign up */
+.mainHeader h1
+{
+    margin-right: auto;
+    font-size: 1.3em;
+    padding: 1em 0 1em 0;
+}
+
+/* Navigation */
+.mainNavigation ul {
+
+    text-align: center;
+}
+
+.mainNavigation li {
+    display: inline-block;
+    width: 10vw;
+    min-width: 170px;
+    font-size: 1.3em;
+}
+
+.mainNavigation a {
+	display: inline-block;
+	padding: 1em 0 0 0;
+}
+
+/* Navigation : pseudo-formating */
+.mainNavigation a{
+    text-decoration: none;
+}
+
+.mainNavigation li a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.mainNavigation li:hover{
+    border-top: 4px solid #0065FC;
+}
+
+.mainNavigation li a:hover{
+    color: #0065FC;
+}
+
+/* ****************** */
+/*     Search Bar     */
+/*                    */
+.searchBar{
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;
+
+    height: 2.3rem;
+}
+
+/* Icone */
+.searchBar i{
+    background-color: #F2F2;
+    height: inherit;
+    width: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+    border: 1px solid rgba(255, 34, 255, 0);
+}
+
+/* Textbox */
+.searchBar input{
+    border: 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    
+    padding: 0;
+    padding-left: 1rem;
+    height: inherit;
+
+    border-top: 1px solid #F2F2;
+    border-bottom: 1px solid #F2F2;
+}
+
+.searchBar input:focus{
+    outline: none;
+}
+
+/* Search button */
+.searchBar button{
+    background-color: #0065FC;
+    color: white;
+    font-size: 0.9em;
+
+    height: inherit;
+    width: 4rem;
+
+    border-bottom-right-radius: 6%;
+    border-top-right-radius: 6%;
+    border: 0;
+}
+
+.searchBar button:focus{
+    border:0;
+    outline: 0;
+}
+
+.searchBar button:active{
+    border:0;
+    outline: 0;
+    border-bottom: 3px solid #0082fc;
+    border-right: 3px solid #0082fc;
+}
+
+/* Premilary text */
+.mainSearchBar{
+    margin: 1em 0;
+}
+.mainSearchBar h2, .mainSearchBar p{
+    margin: 0 0 0.4em 0;
+}
+
+/* ****************** */
+/*       Filter       */
+/*                    */
+.mainfilter{
     display: flex;
     flex-direction: row;
-    background-color: rgb(25, 187, 0);
+    justify-items: left;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
-.menuBar div{
-    flex: 1;
-    background-color: blanchedalmond;
+/* Filter title */
+.mainfilter h2{
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
 }
 
-/* Filter */
-.filter{
+/* Filter list */
+.filterList{
+    display: flex;
+    justify-items: flex-start;
+    align-content: center;
+
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+/* Filter items */
+.filterList li{
     display: flex;
     flex-direction: row;
-    background-color: rgb(25, 187, 0);
+    justify-items: flex-start;
+    align-content: center;
+
+    border: 1px solid #F2F2;
+    border-radius: 19%/50%;
+    margin: 0 1em;
 }
 
-.filter div{
-    flex: 1;
-    background-color: chartreuse;
+/* Filter item icon */
+.filterList i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F2F2;
+    color: #0065FC;
+
+    width: 1em;
+    height: 1em;
+
+    margin-right: 0.5em;
+    padding: 0.7em;
+    border-radius: 50%;
+}
+
+.filterList li:hover{
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+#infoIcon i{
+    color: #0065FC;
+    background-color: white;
 }
 
 /* Main */
@@ -78,20 +250,22 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #F2F2;
-    width: 65%;
+    width: 60%;
     border-radius: 2%;
     height: 500px;
 }
 
 .accommodations div{
     flex: 1;
+    min-width: 25%;
     background-color: chocolate;
-    padding: 12px;
+    margin: 2%;
 }
 
 .accommodations h2, .accommodations h3
 {
     width: 100%;
+    height: min-content;
 }
 
 /* Most Popular */
@@ -99,7 +273,7 @@ h1{
     display: flex;
     flex-direction: column;
     background-color: #F2F2;
-    width: 35;
+    width: 30%;
     border-radius: 2%;
     height: 500px;
 }
@@ -107,7 +281,7 @@ h1{
 .mostPopular div{
     flex: 1;
     background-color: chocolate;
-    padding: 12px;
+    margin: 4%;
 }
 
 /* Activites */
