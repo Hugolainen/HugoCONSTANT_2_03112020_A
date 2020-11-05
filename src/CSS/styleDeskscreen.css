@@ -172,15 +172,68 @@ img {
 /* ****************** */
 /*       Filter       */
 /*                    */
-.filter{
+.mainfilter{
     display: flex;
     flex-direction: row;
-    background-color: rgb(25, 187, 0);
+    justify-items: left;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
-.filter div{
-    flex: 1;
-    background-color: chartreuse;
+/* Filter title */
+.mainfilter h2{
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}
+
+/* Filter list */
+.filterList{
+    display: flex;
+    justify-items: flex-start;
+    align-content: center;
+
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+/* Filter items */
+.filterList li{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-content: center;
+
+    border: 1px solid #F2F2;
+    border-radius: 19%/50%;
+    margin: 0 1em;
+}
+
+/* Filter item icon */
+.filterList i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F2F2;
+    color: #0065FC;
+
+    width: 1em;
+    height: 1em;
+
+    margin-right: 0.5em;
+    padding: 0.7em;
+    border-radius: 50%;
+}
+
+.filterList li:hover{
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+#infoIcon i{
+    color: #0065FC;
+    background-color: white;
 }
 
 /* Main */
