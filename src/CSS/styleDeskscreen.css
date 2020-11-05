@@ -10,10 +10,10 @@ body
 {
     font-family: 'Raleway-Medium', 'droid_sansregular', 'Arial', sans-serif;
     min-height: 100vh;
-    width: 90vw;
+    width: 80vw;
+    min-width: 800px;
     max-width: 1720px;
-    position:relative;
-    padding: 0 5vw;
+    margin: auto;
 }
 
 #logo{
@@ -28,6 +28,7 @@ img {
 	height: auto;
 }
 
+/* Main flex container */
 .bodyFlex{
     display: flex;
     flex-wrap: wrap;
@@ -89,8 +90,88 @@ img {
     color: #0065FC;
 }
 
+/* ****************** */
+/*     Search Bar     */
+/*                    */
+.searchBar{
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;
 
-/* Filter */
+    height: 2.3rem;
+}
+
+/* Icone */
+.searchBar i{
+    background-color: #F2F2;
+    height: inherit;
+    width: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+    border: 1px solid rgba(255, 34, 255, 0);
+}
+
+/* Textbox */
+.searchBar input{
+    border: 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    
+    padding: 0;
+    padding-left: 1rem;
+    height: inherit;
+
+    border-top: 1px solid #F2F2;
+    border-bottom: 1px solid #F2F2;
+}
+
+.searchBar input:focus{
+    outline: none;
+}
+
+/* Search button */
+.searchBar button{
+    background-color: #0065FC;
+    color: white;
+    font-size: 0.9em;
+
+    height: inherit;
+    width: 4rem;
+
+    border-bottom-right-radius: 6%;
+    border-top-right-radius: 6%;
+    border: 0;
+}
+
+.searchBar button:focus{
+    border:0;
+    outline: 0;
+}
+
+.searchBar button:active{
+    border:0;
+    outline: 0;
+    border-bottom: 3px solid #0082fc;
+    border-right: 3px solid #0082fc;
+}
+
+/* Premilary text */
+.mainSearchBar{
+    margin: 1em 0;
+}
+.mainSearchBar h2, .mainSearchBar p{
+    margin: 0 0 0.4em 0;
+}
+
+/* ****************** */
+/*       Filter       */
+/*                    */
 .filter{
     display: flex;
     flex-direction: row;
