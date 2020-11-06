@@ -283,25 +283,42 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: center;
 
     list-style: none;
     flex-wrap:wrap;
 }
 
 .accommodationList li{
-    
     background-color: white;
 
-    padding: 0em 1em 1em 1em;
-    margin: 1em;
+    padding: 0.2em 0.5em;
+    margin: 0 1em;
     border-radius: 1em;
+}
+
+.accommodationList h3{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0.5em 0 0 0;
+}
+
+.accommodationList li img{
+    width: 12em;
+    height: auto;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.accommodationList p{
+    font-size: 1em;
+    margin: 0.5em 0;
 }
 
 .accommodationList li em{
     font-weight: bold;
     font-style: normal;
 }
-
 
 /* main Accommodations */
 
