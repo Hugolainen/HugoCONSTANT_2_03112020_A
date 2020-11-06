@@ -372,16 +372,22 @@ img {
     display: flex;
     flex-direction: column;
     background-color:  rgb(242,242,242);
+
+    list-style: none;
     width: 30%;
-    border-radius: 2%;
-    height: 500px;
+    border-radius: 1em;
 }
 
-.mostPopularList div{
-    flex: 1;
-    background-color: chocolate;
-    margin: 4%;
+.mostPopularList li{
+    display: flex;
+    flex-direction: row;
 }
+
+.mostPopularList li div{
+    
+}
+
+
 
 /* Activites */
 .activities{
