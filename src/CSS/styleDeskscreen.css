@@ -245,7 +245,6 @@ img {
 }
 
 /* Info icon */
-
 #infoIcon i{
     color: #0065FC;
     background-color: white;
@@ -261,36 +260,76 @@ img {
     border: 1px solid rgb(242,242,242);
 }
 
-/* Main */
-.main{
+/* ****************** */
+/*       Accomodation       */
+/*                    */
+.mainAccomodation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accommodationBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 0 2em;
+    border-radius: 1em;
+    background-color: rgb(242,242,242);
+}
+
+.accommodationList{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: auto;
+
+    list-style: none;
+    flex-wrap:wrap;
 }
 
-/* Accommodations */
-.accommodations{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color:  rgb(242,242,242);
-    width: 60%;
-    border-radius: 2%;
-    height: 500px;
+.accommodationList li{
+    
+    background-color: white;
+
+    padding: 0em 1em 1em 1em;
+    margin: 1em;
+    border-radius: 1em;
 }
 
-.accommodations div{
-    flex: 1;
-    min-width: 25%;
-    background-color: chocolate;
-    margin: 2%;
+.accommodationList li em{
+    font-weight: bold;
+    font-style: normal;
 }
 
-.accommodations h2, .accommodations h3
-{
-    width: 100%;
-    height: min-content;
+
+/* main Accommodations */
+
+
+
+/* Start rating */
+:root {
+    --star-size: 1.5em;
+    --star-color: rgb(242,242,242);
+    --star-background: rgb(0,101,252);
+  }
+
+.starRating {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times; 
+    line-height: 1;
+}
+
+.starRating::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Most Popular */
