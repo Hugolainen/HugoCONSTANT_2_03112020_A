@@ -103,7 +103,7 @@ img {
 
 /* Icone */
 .searchBar i{
-    background-color: #F2F2;
+    background-color: rgb(242,242,242);
     height: inherit;
     width: 2.5rem;
 
@@ -113,7 +113,7 @@ img {
 
     border-bottom-left-radius: 15%;
     border-top-left-radius: 15%;
-    border: 1px solid rgba(255, 34, 255, 0);
+    border: 1px solid  rgb(242,242,242);
 }
 
 /* Textbox */
@@ -127,8 +127,8 @@ img {
     padding-left: 1rem;
     height: inherit;
 
-    border-top: 1px solid #F2F2;
-    border-bottom: 1px solid #F2F2;
+    border-top: 1px solid  rgb(242,242,242);
+    border-bottom: 1px solid rgb(242,242,242);
 }
 
 .searchBar input:focus{
@@ -172,16 +172,18 @@ img {
 /* ****************** */
 /*       Filter       */
 /*                    */
-.mainfilter{
+.mainFilter{
     display: flex;
     flex-direction: row;
     justify-items: left;
     align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+
+    margin-bottom: 0px;
 }
 
 /* Filter title */
-.mainfilter h2{
+.mainFilter h2{
     font-size: 1em;
     font-weight: bold;
     color: black;
@@ -194,7 +196,9 @@ img {
     align-content: center;
 
 	list-style: none;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    margin: 0;
 }
 
 /* Filter items */
@@ -202,11 +206,18 @@ img {
     display: flex;
     flex-direction: row;
     justify-items: flex-start;
+    align-items: center;
     align-content: center;
+    flex-wrap:wrap;
 
-    border: 1px solid #F2F2;
-    border-radius: 19%/50%;
-    margin: 0 1em;
+    padding-right: 0.7em;
+    margin: 0.3em 1em;
+    height: 2.2em;
+
+    border-top: 2px solid  rgb(242,242,242);
+    border-bottom: 2px solid rgb(242,242,242);
+    border-right: 2px solid  rgb(242,242,242);
+    border-radius: 2em;
 }
 
 /* Filter item icon */
@@ -215,25 +226,39 @@ img {
     justify-content: center;
     align-items: center;
 
-    background-color: #F2F2;
+    background-color:#DEEBFF;
     color: #0065FC;
 
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
 
     margin-right: 0.5em;
-    padding: 0.7em;
+    padding: 0.6em;
     border-radius: 50%;
 }
 
+/* Filter item icon : pseudo-code */
 .filterList li:hover{
-    border-color: #0065FC;
     color: #0065FC;
+    background-color: rgb(242,242,242);
+
 }
+
+/* Info icon */
 
 #infoIcon i{
     color: #0065FC;
     background-color: white;
+
+    text-align: center;
+    font-size: 0.8em;
+    width: 1em;
+    margin: 0 0 1em 0;
+    
+    margin: 1em 0;
+    padding: 0.15em;
+    border-radius: 50%;
+    border: 1px solid rgb(242,242,242);
 }
 
 /* Main */
@@ -249,7 +274,7 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #F2F2;
+    background-color:  rgb(242,242,242);
     width: 60%;
     border-radius: 2%;
     height: 500px;
@@ -272,7 +297,7 @@ img {
 .mostPopular{
     display: flex;
     flex-direction: column;
-    background-color: #F2F2;
+    background-color:  rgb(242,242,242);
     width: 30%;
     border-radius: 2%;
     height: 500px;
@@ -312,7 +337,7 @@ img {
 .footer{
     display: flex;
     flex-direction: row;
-    background-color: #F2F2;
+    background-color:  rgb(242,242,242);
     justify-content: space-around;
     align-content: center;
 }
