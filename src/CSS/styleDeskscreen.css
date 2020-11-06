@@ -261,7 +261,7 @@ img {
 }
 
 /* ****************** */
-/*       Accomodation       */
+/*    Accommodation   */
 /*                    */
 .mainAccomodation{
     display: flex;
@@ -269,16 +269,23 @@ img {
     justify-content: space-between;
 }
 
+/* AccommodationBox - column flex */
 .accommodationBox{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 60%;
 
-    padding: 0 2em;
+    padding: 1em 2em;
     border-radius: 1em;
     background-color: rgb(242,242,242);
 }
 
+.accommodationBox h2, .accommodationBox h4{
+    margin: 0;
+}
+
+/* AccommodationList - row flex */
 .accommodationList{
     display: flex;
     flex-direction: row;
@@ -287,44 +294,53 @@ img {
 
     list-style: none;
     flex-wrap:wrap;
+    margin: 0;
+    padding: 0;
 }
 
+/* AccommodationList - items */
 .accommodationList li{
     background-color: white;
 
-    padding: 0.2em 0.5em;
-    margin: 0 1em;
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    padding: 0.4em;
+    margin: 1em 1em;
     border-radius: 1em;
 }
 
+/* AccommodationList - item title */
 .accommodationList h3{
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: bold;
     margin: 0.5em 0 0 0;
 }
 
+/* AccommodationList - item image */
 .accommodationList li img{
-    width: 12em;
-    height: auto;
+    width: 16em;
+    height: 8em;
+    object-fit: cover;
+
+    padding: 0;
+    margin: 0;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
 
+/* AccommodationList - item descirption */
 .accommodationList p{
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 0.5em 0;
 }
 
+/* AccommodationList - item price */
 .accommodationList li em{
     font-weight: bold;
     font-style: normal;
 }
 
-/* main Accommodations */
-
-
-
-/* Start rating */
+/* AccommodationList - item start rating */
 :root {
     --star-size: 1.5em;
     --star-color: rgb(242,242,242);
@@ -349,8 +365,10 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-/* Most Popular */
-.mostPopular{
+/* ****************** */
+/*    Most Popular    */
+/*                    */
+.mostPopularList{
     display: flex;
     flex-direction: column;
     background-color:  rgb(242,242,242);
@@ -359,7 +377,7 @@ img {
     height: 500px;
 }
 
-.mostPopular div{
+.mostPopularList div{
     flex: 1;
     background-color: chocolate;
     margin: 4%;
