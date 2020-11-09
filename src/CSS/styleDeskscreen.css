@@ -6,6 +6,8 @@
     font-style: normal;
 }
 
+
+
 body
 {
     font-family: 'Raleway-Medium', 'droid_sansregular', 'Arial', sans-serif;
@@ -276,6 +278,7 @@ img {
     justify-content: flex-start;
     width: 60%;
 
+    margin-right: 1em;
     padding: 1em 2em;
     border-radius: 1em;
     background-color: rgb(242,242,242);
@@ -283,6 +286,7 @@ img {
 
 .accommodationBox h2, .accommodationBox h4{
     margin: 0;
+    padding: 0.5em
 }
 
 /* AccommodationList - row flex */
@@ -320,6 +324,7 @@ img {
 .accommodationList li img{
     width: 16em;
     height: 8em;
+
     object-fit: cover;
 
     padding: 0;
@@ -340,7 +345,129 @@ img {
     font-style: normal;
 }
 
-/* AccommodationList - item start rating */
+/* ****************** */
+/*    Most Popular    */
+/*                    */
+.mostPopularBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+
+    padding: 1em 2em;
+    border-radius: 1em;
+    background-color: rgb(242,242,242);
+}
+
+/* Most Popular list - item title */
+.mostPopularList h2{
+    margin: 0;
+    padding: 0.5em;
+}
+
+.mostPopularList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mostPopularList li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    background-color: white;
+    border-radius: 1em;
+    margin: 1em 0;
+    padding: 0.4em;
+}
+
+.mostPopularList li:nth-child(1){
+    margin: 0;
+}
+
+.mostPopularList li img{
+    width: 8em;
+    height: 9em;
+    object-fit: cover;
+
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.mostPopularInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 0;
+    margin-left: 1em;
+    height: 9em;
+}
+
+.mostPopularInfo h3 {
+    padding: 0;
+    margin: 0 0 0 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.mostPopularInfo .starRating{
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+/* Activites */
+.mainActivities{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.activitiesList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.activitiesList li{
+    border-radius: 1em;
+
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    padding: 0.4em;
+    margin: 1em 1em;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color:  rgb(242,242,242);
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Start rating */
 :root {
     --star-size: 1.5em;
     --star-color: rgb(242,242,242);
@@ -365,64 +492,28 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-/* ****************** */
-/*    Most Popular    */
-/*                    */
-.mostPopularList{
-    display: flex;
-    flex-direction: column;
-    background-color:  rgb(242,242,242);
 
-    list-style: none;
-    width: 30%;
-    border-radius: 1em;
+@media only screen and (max-width: 1350px) {
+    .accommodationBox{
+        width: 90%;
+    }
+
+    .mainAccomodation{
+        flex-wrap: wrap;
+    }
+
+    .accommodationBox{
+        margin-bottom: 1em;
+    }
+
+    .accommodationList li img{
+        height: 9em;
+        width: 19em;
+    }
+
+    .mostPopularBox{
+        width: 90%;
+    }
 }
 
-.mostPopularList li{
-    display: flex;
-    flex-direction: row;
-}
 
-.mostPopularList li div{
-    
-}
-
-
-
-/* Activites */
-.activities{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.activities div{
-    flex: 1;
-    background-color: chocolate;
-    padding: 12px;
-}
-
-.activities h2{
-    width: 100%;
-}
-
-/* Footer */
-.item:nth-child(9){
-    width: 100%;
-    background-color: #F2F2;
-}
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    background-color:  rgb(242,242,242);
-    justify-content: space-around;
-    align-content: center;
-}
-
-.footer div{
-    flex: 1;
-    background-color: blanchedalmond;
-}
