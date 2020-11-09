@@ -359,12 +359,7 @@ img {
     background-color: rgb(242,242,242);
 }
 
-/* Most Popular list - item title */
-.mostPopularList h2{
-    margin: 0;
-    padding: 0.5em;
-}
-
+/* Most Popular list - box */
 .mostPopularList{
     display: flex;
     flex-direction: column;
@@ -376,6 +371,20 @@ img {
     padding: 0;
 }
 
+/* Most Popular list - item title */
+.mostPopularList h2{
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* Most Popular list - icone */
+.mostPopularBox i{
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+/* Most Popular list - items */
 .mostPopularList li{
     display: flex;
     flex-direction: row;
@@ -394,6 +403,7 @@ img {
     margin: 0;
 }
 
+/* Most Popular list - items image */
 .mostPopularList li img{
     width: 8em;
     height: 9em;
@@ -405,6 +415,7 @@ img {
     border-bottom-left-radius: 1em;
 }
 
+/* Most Popular list - items description */
 .mostPopularInfo {
     display: flex;
     flex-direction: column;
@@ -417,7 +428,8 @@ img {
 
 .mostPopularInfo h3 {
     padding: 0;
-    margin: 0 0 0 0;
+    margin: 0;
+    margin-top: 0.5em;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -427,7 +439,9 @@ img {
     margin: 0;
 }
 
-/* Activites */
+/* ****************** */
+/*      Activites     */
+/*                    */
 .mainActivities{
     display: flex;
     flex-direction: column;
@@ -452,7 +466,9 @@ img {
     margin: 1em 1em;
 }
 
-/* Footer */
+/* ****************** */
+/*       Footer       */
+/*                    */
 .footer{
     display: flex;
     flex-direction: row;
@@ -467,7 +483,9 @@ img {
 }
 
 
-/* Start rating */
+/* ****************** */
+/*     Star rating    */
+/*                    */
 :root {
     --star-size: 1.5em;
     --star-color: rgb(242,242,242);
@@ -493,6 +511,9 @@ img {
 }
 
 
+/* ****************** */
+/*   Media querries   */
+/*                    */
 @media only screen and (max-width: 1350px) {
     .accommodationBox{
         width: 90%;
