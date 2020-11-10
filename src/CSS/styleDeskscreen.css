@@ -6,6 +6,8 @@
     font-style: normal;
 }
 
+
+
 body
 {
     font-family: 'Raleway-Medium', 'droid_sansregular', 'Arial', sans-serif;
@@ -32,7 +34,7 @@ img {
 .bodyFlex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -103,7 +105,7 @@ img {
 
 /* Icone */
 .searchBar i{
-    background-color: #F2F2;
+    background-color: rgb(242,242,242);
     height: inherit;
     width: 2.5rem;
 
@@ -113,7 +115,7 @@ img {
 
     border-bottom-left-radius: 15%;
     border-top-left-radius: 15%;
-    border: 1px solid rgba(255, 34, 255, 0);
+    border: 1px solid  rgb(242,242,242);
 }
 
 /* Textbox */
@@ -127,8 +129,8 @@ img {
     padding-left: 1rem;
     height: inherit;
 
-    border-top: 1px solid #F2F2;
-    border-bottom: 1px solid #F2F2;
+    border-top: 1px solid  rgb(242,242,242);
+    border-bottom: 1px solid rgb(242,242,242);
 }
 
 .searchBar input:focus{
@@ -172,16 +174,18 @@ img {
 /* ****************** */
 /*       Filter       */
 /*                    */
-.mainfilter{
+.mainFilter{
     display: flex;
     flex-direction: row;
     justify-items: left;
     align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+
+    margin-bottom: 0px;
 }
 
 /* Filter title */
-.mainfilter h2{
+.mainFilter h2{
     font-size: 1em;
     font-weight: bold;
     color: black;
@@ -194,7 +198,9 @@ img {
     align-content: center;
 
 	list-style: none;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    margin: 0;
 }
 
 /* Filter items */
@@ -202,11 +208,18 @@ img {
     display: flex;
     flex-direction: row;
     justify-items: flex-start;
+    align-items: center;
     align-content: center;
+    flex-wrap:wrap;
 
-    border: 1px solid #F2F2;
-    border-radius: 19%/50%;
-    margin: 0 1em;
+    padding-right: 0.7em;
+    margin: 0.3em 1em;
+    height: 2.2em;
+
+    border-top: 2px solid  rgb(242,242,242);
+    border-bottom: 2px solid rgb(242,242,242);
+    border-right: 2px solid  rgb(242,242,242);
+    border-radius: 2em;
 }
 
 /* Filter item icon */
@@ -215,109 +228,403 @@ img {
     justify-content: center;
     align-items: center;
 
-    background-color: #F2F2;
+    background-color:#DEEBFF;
     color: #0065FC;
 
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
 
     margin-right: 0.5em;
-    padding: 0.7em;
+    padding: 0.6em;
     border-radius: 50%;
 }
 
+/* Filter item icon : pseudo-code */
 .filterList li:hover{
-    border-color: #0065FC;
     color: #0065FC;
+    background-color: rgb(242,242,242);
+
 }
 
+/* Info icon */
 #infoIcon i{
     color: #0065FC;
     background-color: white;
+
+    text-align: center;
+    font-size: 0.8em;
+    width: 1em;
+    margin: 0 0 1em 0;
+    
+    margin: 1em 0;
+    padding: 0.15em;
+    border-radius: 50%;
+    border: 1px solid rgb(242,242,242);
 }
 
-/* Main */
-.main{
+/* ****************** */
+/*    Accommodation   */
+/*                    */
+.mainAccomodation{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: auto;
+    justify-content: space-between;
 }
 
-/* Accommodations */
-.accommodations{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #F2F2;
-    width: 60%;
-    border-radius: 2%;
-    height: 500px;
-}
-
-.accommodations div{
-    flex: 1;
-    min-width: 25%;
-    background-color: chocolate;
-    margin: 2%;
-}
-
-.accommodations h2, .accommodations h3
-{
-    width: 100%;
-    height: min-content;
-}
-
-/* Most Popular */
-.mostPopular{
+/* AccommodationBox - column flex */
+.accommodationBox{
     display: flex;
     flex-direction: column;
-    background-color: #F2F2;
-    width: 30%;
-    border-radius: 2%;
-    height: 500px;
+    justify-content: flex-start;
+    width: 60%;
+
+    margin-right: 1em;
+    padding: 1em 2em;
+    border-radius: 1em;
+    background-color: rgb(242,242,242);
 }
 
-.mostPopular div{
-    flex: 1;
-    background-color: chocolate;
-    margin: 4%;
+.accommodationBox h2, .accommodationBox h4{
+    margin: 0;
+    padding: 0.5em
 }
 
-/* Activites */
-.activities{
+/* AccommodationList - row flex */
+.accommodationList{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.activities div{
-    flex: 1;
-    background-color: chocolate;
-    padding: 12px;
-}
-
-.activities h2{
-    width: 100%;
-}
-
-/* Footer */
-.item:nth-child(9){
-    width: 100%;
-    background-color: #F2F2;
-}
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    background-color: #F2F2;
     justify-content: space-around;
     align-content: center;
+
+    list-style: none;
+    flex-wrap:wrap;
+    margin: 0;
+    padding: 0;
 }
 
-.footer div{
-    flex: 1;
-    background-color: blanchedalmond;
+/* AccommodationList - items */
+.accommodationList li{
+    background-color: white;
+
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    padding: 0.4em;
+    margin: 1em 1em;
+    border-radius: 1em;
 }
+
+/* AccommodationList - item title */
+.accommodationList h3{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0.5em 0 0 0;
+}
+
+/* AccommodationList - item image */
+.accommodationList li img{
+    width: 16em;
+    height: 8em;
+
+    object-fit: cover;
+
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+/* AccommodationList - item descirption */
+.accommodationList p{
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+
+/* AccommodationList - item price */
+.accommodationList li em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ****************** */
+/*    Most Popular    */
+/*                    */
+.mostPopularBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+
+    padding: 1em 2em;
+    border-radius: 1em;
+    background-color: rgb(242,242,242);
+}
+
+/* Most Popular Box - list title */
+.mostPopularList h2{
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* Most Popular Box - icone */
+.mostPopularBox i{
+    float: right;
+}
+
+/* Most Popular Box - List */
+.mostPopularList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Most Popular list - items */
+.mostPopularList li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    background-color: white;
+    border-radius: 1em;
+    margin: 0.6em 0;
+    padding: 0.4em;
+}
+
+.mostPopularList li:nth-child(1){
+    margin: 0;
+    margin-bottom: 0.6em;
+}
+
+/* Most Popular list - items image */
+.mostPopularList li img{
+    width: 8em;
+    height: 9em;
+    object-fit: cover;
+
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+/* Most Popular list - items description */
+.mostPopularInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 0;
+    margin-left: 1em;
+    height: 9em;
+}
+
+.mostPopularInfo h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.mostPopularInfo .starRating{
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+/* ****************** */
+/*      Activites     */
+/*                    */
+.mainActivities{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.mainActivities h2{
+    margin: 0;
+    padding: 0;
+}
+
+.activitiesList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    height: 35em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.activitiesList li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    width: 22%;
+
+    border-radius: 1em;
+}
+
+.activitiesList li:nth-child(3n+1){
+    height: 100%;
+}
+
+.activitiesList li:nth-child(2){
+    height: 55%;
+    max-height: 55%;
+}
+
+.activitiesList li:nth-child(3){
+    height: 40%;
+}
+
+.activitiesList li:nth-child(n+5){
+    height: 47%;
+}
+
+.activitiesList span{
+    height: 100%;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.activitiesList img{
+    display: inline-block;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activitiesList h3{
+    padding-left: 1em;
+    padding-bottom: 0;
+    padding-top: 0.3em;
+    margin: 0.4em;
+    font-size: 0.7em;
+    height: 2em;
+}
+
+/* ****************** */
+/*       Footer       */
+/*                    */
+.mainfooter{
+    display: flex;
+    flex-direction: row;
+    background-color:  rgb(242,242,242);
+    justify-content: space-around;
+    align-content: center;
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* Footer - List */
+.mainfooter ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer - List items */
+.mainfooter li{
+    margin: 0.5em;
+}
+
+/* Footer - titles */
+.mainfooter em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Footer - Pseudo code */
+.mainfooter li a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainfooter li a:visited{
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+
+.mainfooter li a:hover{
+    text-decoration: underline;
+}
+
+
+/* ****************** */
+/*     Star rating    */
+/*                    */
+:root {
+    --star-size: 1.5em;
+    --star-color: rgb(242,242,242);
+    --star-background: rgb(0,101,252);
+  }
+
+.starRating {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times; 
+    line-height: 1;
+}
+
+.starRating::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ****************** */
+/*   Media querries   */
+/*                    */
+@media only screen and (max-width: 1350px) {
+
+    .mainAccomodation{
+        flex-wrap: wrap;
+    }
+    .accommodationBox{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .accommodationBox{
+        margin-bottom: 1em;
+    }
+
+    .accommodationList li img{
+        height: 9em;
+        width: 19em;
+    }
+
+    .mostPopularBox{
+        width: 100%;
+    }
+
+}
+
+
