@@ -359,7 +359,18 @@ img {
     background-color: rgb(242,242,242);
 }
 
-/* Most Popular list - box */
+/* Most Popular Box - list title */
+.mostPopularList h2{
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* Most Popular Box - icone */
+.mostPopularBox i{
+    float: right;
+}
+
+/* Most Popular Box - List */
 .mostPopularList{
     display: flex;
     flex-direction: column;
@@ -369,19 +380,6 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-/* Most Popular list - item title */
-.mostPopularList h2{
-    margin: 0;
-    padding: 0.5em;
-}
-
-/* Most Popular list - icone */
-.mostPopularBox i{
-    float: right;
-    padding: 0;
-    margin: 0;
 }
 
 /* Most Popular list - items */
@@ -395,12 +393,13 @@ img {
 
     background-color: white;
     border-radius: 1em;
-    margin: 1em 0;
+    margin: 0.6em 0;
     padding: 0.4em;
 }
 
 .mostPopularList li:nth-child(1){
     margin: 0;
+    margin-bottom: 0.6em;
 }
 
 /* Most Popular list - items image */
