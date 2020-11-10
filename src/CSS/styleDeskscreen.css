@@ -34,7 +34,7 @@ img {
 .bodyFlex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -468,17 +468,47 @@ img {
 /* ****************** */
 /*       Footer       */
 /*                    */
-.footer{
+.mainfooter{
     display: flex;
     flex-direction: row;
     background-color:  rgb(242,242,242);
     justify-content: space-around;
     align-content: center;
+    margin: 0;
+    padding: 0.5em;
 }
 
-.footer em{
+/* Footer - List */
+.mainfooter ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer - List items */
+.mainfooter li{
+    margin: 0.5em;
+}
+
+/* Footer - titles */
+.mainfooter em{
     font-weight: bold;
     font-style: normal;
+}
+
+/* Footer - Pseudo code */
+.mainfooter li a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainfooter li a:visited{
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+
+.mainfooter li a:hover{
+    text-decoration: underline;
 }
 
 
@@ -514,8 +544,10 @@ img {
 /*   Media querries   */
 /*                    */
 @media only screen and (max-width: 1350px) {
+
     .accommodationBox{
-        width: 90%;
+        width: 100%;
+        margin-right: 0;
     }
 
     .mainAccomodation{
@@ -532,8 +564,9 @@ img {
     }
 
     .mostPopularBox{
-        width: 90%;
+        width: 100%;
     }
+
 }
 
 
