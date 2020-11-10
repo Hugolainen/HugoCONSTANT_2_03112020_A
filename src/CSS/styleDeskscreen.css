@@ -444,9 +444,8 @@ img {
 .mainActivities{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
     margin: 1em 0;
     padding: 0;
 }
@@ -459,50 +458,70 @@ img {
 .activitiesList{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
-    max-height: 40em;
+
+    height: 35em;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.activitiesList li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    width: 22%;
+
+    border-radius: 1em;
+}
+
+.activitiesList li:nth-child(3n+1){
+    height: 100%;
+}
+
+.activitiesList li:nth-child(2){
+    height: 55%;
+    max-height: 55%;
+}
+
+.activitiesList li:nth-child(3){
+    height: 40%;
+}
+
+.activitiesList li:nth-child(n+5){
+    height: 47%;
+}
+
+.activitiesList span{
+    height: 100%;
+    
     padding: 0;
     margin: 0;
 }
 
-.activitiesList li{
-    border-radius: 1em;
-
-    width: 25%;
-
-    box-shadow: 0px 0px 3px #BBBBBB;
-    margin: 0.5em;
-}
-
-.activitiesList li:nth-child(1) img, .activitiesList li:nth-child(4) img{
-    height: 35em;
-}
-
-.activitiesList li:nth-child(2) img{
-    height: 20em;
-}
-
-.activitiesList li:nth-child(3) img{
-    height: 12em;
-}
-
-.activitiesList li:nth-child(5) img, .activitiesList :nth-child(6) img{
-    height: 16em;
-}
-
 .activitiesList img{
+    display: inline-block;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
 .activitiesList h3{
     padding-left: 1em;
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0.3em;
     margin: 0.4em;
-    font-size: 1em;
+    font-size: 0.7em;
+    height: 2em;
 }
 
 /* ****************** */
@@ -585,13 +604,12 @@ img {
 /*                    */
 @media only screen and (max-width: 1350px) {
 
+    .mainAccomodation{
+        flex-wrap: wrap;
+    }
     .accommodationBox{
         width: 100%;
         margin-right: 0;
-    }
-
-    .mainAccomodation{
-        flex-wrap: wrap;
     }
 
     .accommodationBox{
