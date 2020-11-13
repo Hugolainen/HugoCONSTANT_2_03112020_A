@@ -1,173 +1,163 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
     <head> 
         <meta charset="utf-8" />
-        <title> Project 1 </title>
-        <link rel="stylesheet" href="/src/CSS/styleDeskscreen.css" />
+        <title> Reservia - Home page </title>
+        <link rel="stylesheet" media="all and (width > 479px)" href="/src/CSS/styleDeskscreen.css" />
+        <link rel="stylesheet" media="all" href="/src/CSS/stylePhonescreen.css" type="text/css">
         <script src="https://kit.fontawesome.com/6fcdcaea13.js" crossorigin="anonymous"></script>
     </head>
 
     <body class=bodyFlex>
         <header class = "mainHeader">
-                <h1 class="mh-logo">
-                    <img src="/src/Images/Reservia.png" width="170" height="95" alt="logo Reservia"/>
-                </h1>
+            <div class="mh-logo">
+                <img src="/src/Images/Reservia.png" alt="logo Reservia"/>
+            </div>
 
-                <nav class="mainNavigation">
-                    <ul class="navList">
-                        <li>
-                            <a href="#goToAccommodation"> Accomodations </a>
-                        </li>
-                        <li>
-                            <a href="#goToActivities"> Activities </a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav class="mainNavigation">
+                <span>
+                    <a href="#goToAccommodation"> Accomodations </a>
+                </span>
+                <span>
+                    <a href="#goToActivities"> Activities </a>
+                </span>
+            </nav>
 
-                <nav class="mainNavigation">
-                    <h1>
-                        <a href="#"> Sign up </a>
-                    </h1>
-                </nav>
+            <div id="signUp">
+                <a href="#"> Sign up </a>
+            </div>
         </header>
 
         <!-- SearchBar -->
-        <div class="mainSearchBar">
-            <h2> Find a place for your dream vacation </h2>
+        <section class="mainSearchBar">
+            <h1> Find a place for your dream vacation </h1>
             <p> Downtown or in nature </p>
-
             <div class="searchBar">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="text" placeholder="Search..">
                 <button type="submit"> Search </button>                
             </div>
-        </div>
+        </section>
 
         <!-- Filter -->
-        <div class="mainFilter">
-            <h2> 
-                Filters
-            </h2>
+        <section class="mainFilter">
+            <h4 class="subCategorieText"> Filters </h4>
 
-            <ul class="filterList">
+            <ul class=" filterList">
                 <li>
                     <i class="fas fa-money-bill-wave"></i>
-                    Low cost
+                    <strong> Low cost </strong>
                 </li>
                 <li>
                     <i class="fas fa-child"></i>
-                    Family-friendly
+                    <strong>Family-friendly </strong>
                 </li>
                 <li>
                     <i class="fas fa-heart"></i>
-                    Romantic
+                    <strong>Romantic</strong>
                 </li>
                 <li>
                     <i class="fas fa-dog" ></i>
-                    Pets allowed
+                    <strong>Pets allowed</strong>
                 </li>
             </ul>
-        </div>
 
-        <div id="infoIcon">
-            <i class="fas fa-info" ></i>
-            More than 500 accommodations are available in this city
-        </div>    
+            <div id="infoIcon">
+                <i class="fas fa-info" ></i>
+                <p> More than 500 accommodations are available in this city </p>
+            </div>    
+        </section>
 
         <!-- Accommodations -->
         <div class="mainAccomodation" id="goToAccommodation">
-
             <!-- Accommodation - List -->
-            <div class="accommodationBox">
+            <section class="accommodationBox">
                 <h2> Accomodations in Marseille </h2>
                 <ul class="accommodationList"> 
                     <li>
                         <span> <img src="/src/Images/accommodations/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image: Auberge de la cannebière"/> </span>
                         <h3>Auberge de la Cannebière </h3>
                         <p> Night starting at <em>25€</em> </p>
-                        <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 4;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image: Hôtel du port"/> </span>
                         <h3> Hôtel du port </h3>
                         <p> Night starting at <em>52€</em> </p>
-                        <div class="starRating" style="--rating: 5;" aria-label="Rating of this hotel is 5 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 5;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image: Les mouettes Hötel"/> </span>
                         <h3> Les mouettes Hötel </h3>
                         <p> Night starting at <em>76€</em> </p>
-                        <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 4;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image: Hötel de la mer"/> </span>
                         <h3> Hötel de la mer </h3>
                         <p> Night starting at <em>46€</em> </p>
-                        <div class="starRating" style="--rating: 3;" aria-label="Rating of this hotel is 3 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 3;" >  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image: Auberge Le Panier"/> </span>
                         <h3>Auberge Le Panier </h3>
                         <p> Night starting at <em>23€</em> </p>
-                        <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 4;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image: Hôtel chez Amina"/> </span>
                         <h3> Hôtel chez Amina </h3>
                         <p> Night starting at <em>96€</em> </p>
-                        <div class="starRating" style="--rating: 5;" aria-label="Rating of this hotel is 5 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 5;">  </div>
                     </li>
-
-
-                    
                 </ul>
-                <h4> Show more </h3>
-            </div>
+                <p class="subCategorieText"> Show more </p>
+            </section>
                 
             <!-- Accommodations - Most Popular -->
-            <div class="mostPopularBox"> 
+            <section class="mostPopularBox"> 
                 <h2> Most Popular <i class="fas fa-chart-line"></i>  </h2>
                 
                 <ul class="mostPopularList"> 
                     <li>
-                        <div> <img src="/src/Images/accommodations/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image: Auberge de la cannebière"/> </div>
+                        <span> <img src="/src/Images/accommodations/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image: Auberge de la cannebière"/> </span>
                         <div class="mostPopularInfo">
                             <h3>Morning Sun Hotel </h3>
                             <p> Night starting at <em>128€</em> </p>
-                            <div class="starRating" style="--rating: 5;" aria-label="Rating of this hotel is 5 out of 5.">  </div>                            
+                            <div class="starRating" style="--rating: 5;">  </div>                            
                         </div>
                     </li>
 
                     <li>
-                        <div> <img src="/src/Images/accommodations/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image: Hôtel du port"/> </div>
+                        <span> <img src="/src/Images/accommodations/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image: Hôtel du port"/> </span>
                          <div class="mostPopularInfo">
                             <h3> Au coeur de l'eau Bed and Breakfast </h3>
                             <p> Night starting at <em>71€</em> </p>
-                            <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>    
+                            <div class="starRating" style="--rating: 4;">  </div>    
                         </div>
                         </li>
 
                     <li>
-                        <div> <img src="/src/Images/accommodations/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image: Tout bleu et Blanc Hotel"/> </div>
+                        <span> <img src="/src/Images/accommodations/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image: Tout bleu et Blanc Hotel"/> </span>
                         <div class="mostPopularInfo">
                             <h3> Tout bleu et Blanc Hotel</h3>
                             <p> Night starting at <em>68€</em> </p>
-                            <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>                        
+                            <div class="starRating" style="--rating: 4;">  </div>                        
                         </div>
                     </li>
                 </ul>
-            </div>
+            </section>
         </div>
 
-         <!-- Activities -->
-         <div class="mainActivities" id="goToActivities">
+        <!-- Activities -->
+         <section class="mainActivities" id="goToActivities">
             <h2> Activities in Marseille </h2>
+
             <ul class="activitiesList">
                 <li>
                     <span><img src="/src/Images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image: Old Port"/> </span>
@@ -199,19 +189,19 @@
                     <h3>Longchamp Park</h3>
                 </li>
             </ul>
-        </div>
+        </section>
         
         <!-- Footer -->
-        <div class="mainfooter">
+        <footer class="mainfooter">
             <ul> 
-                <li><em>About</em> </li>
+                <li> <em>About</em> </li>
                 <li> <a href="#"> Site Map </a></li>
                 <li> <a href="#"> General Terms and Conditions </a></li>
                 <li> <a href="#"> Data and Privacy </a></li>
             </ul>
 
             <ul> 
-                <li><em>Our Accommodations</em> </li>
+                <li> <em>Our Accommodations</em> </li>
                 <li> <a href="#"> Quality Assessment </a> </li>
                 <li> <a href="#"> You have a hotel? </a> </li>
             </ul>
@@ -221,6 +211,6 @@
                 <li> <a href="#"> Help Desk </a> </li>
                 <li> <a href="#"> Contact Us </a> </li>
             </ul>
-        </div>   
+        </footer>   
     </body>
 </html>
