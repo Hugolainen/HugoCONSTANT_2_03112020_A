@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
     <head> 
         <meta charset="utf-8" />
         <title> Reservia - Home page </title>
-        <link rel="stylesheet" media="all and (min-device-width: 479px)" href="/src/CSS/styleDeskscreen.css" />
-        <link rel="stylesheet" media="all and (max-device-width: 480px)" href="/src/CSS/stylePhonescreen.css" " type="text/css">
+        <link rel="stylesheet" media="all and (width > 479px)" href="/src/CSS/styleDeskscreen.css" />
+        <link rel="stylesheet" media="all" href="/src/CSS/stylePhonescreen.css" type="text/css">
         <script src="https://kit.fontawesome.com/6fcdcaea13.js" crossorigin="anonymous"></script>
     </head>
 
@@ -31,7 +30,7 @@
 
         <!-- SearchBar -->
         <section class="mainSearchBar">
-            <h1> Find a place for your dream vacation </h2>
+            <h1> Find a place for your dream vacation </h1>
             <p> Downtown or in nature </p>
             <div class="searchBar">
                 <i class="fas fa-map-marker-alt"></i>
@@ -42,7 +41,7 @@
 
         <!-- Filter -->
         <section class="mainFilter">
-            <p class="subCategorieText"> Filters </p>
+            <h4 class="subCategorieText"> Filters </h4>
 
             <ul class=" filterList">
                 <li>
@@ -70,7 +69,7 @@
         </section>
 
         <!-- Accommodations -->
-        <section class="mainAccomodation" id="goToAccommodation">
+        <div class="mainAccomodation" id="goToAccommodation">
             <!-- Accommodation - List -->
             <section class="accommodationBox">
                 <h2> Accomodations in Marseille </h2>
@@ -79,42 +78,42 @@
                         <span> <img src="/src/Images/accommodations/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image: Auberge de la cannebière"/> </span>
                         <h3>Auberge de la Cannebière </h3>
                         <p> Night starting at <em>25€</em> </p>
-                        <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 4;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image: Hôtel du port"/> </span>
                         <h3> Hôtel du port </h3>
                         <p> Night starting at <em>52€</em> </p>
-                        <div class="starRating" style="--rating: 5;" aria-label="Rating of this hotel is 5 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 5;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image: Les mouettes Hötel"/> </span>
                         <h3> Les mouettes Hötel </h3>
                         <p> Night starting at <em>76€</em> </p>
-                        <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 4;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image: Hötel de la mer"/> </span>
                         <h3> Hötel de la mer </h3>
                         <p> Night starting at <em>46€</em> </p>
-                        <div class="starRating" style="--rating: 3;" aria-label="Rating of this hotel is 3 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 3;" >  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image: Auberge Le Panier"/> </span>
                         <h3>Auberge Le Panier </h3>
                         <p> Night starting at <em>23€</em> </p>
-                        <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 4;">  </div>
                     </li>
 
                     <li>
                         <span> <img src="/src/Images/accommodations/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image: Hôtel chez Amina"/> </span>
                         <h3> Hôtel chez Amina </h3>
                         <p> Night starting at <em>96€</em> </p>
-                        <div class="starRating" style="--rating: 5;" aria-label="Rating of this hotel is 5 out of 5.">  </div>
+                        <div class="starRating" style="--rating: 5;">  </div>
                     </li>
                 </ul>
                 <p class="subCategorieText"> Show more </p>
@@ -130,7 +129,7 @@
                         <div class="mostPopularInfo">
                             <h3>Morning Sun Hotel </h3>
                             <p> Night starting at <em>128€</em> </p>
-                            <div class="starRating" style="--rating: 5;" aria-label="Rating of this hotel is 5 out of 5.">  </div>                            
+                            <div class="starRating" style="--rating: 5;">  </div>                            
                         </div>
                     </li>
 
@@ -139,7 +138,7 @@
                          <div class="mostPopularInfo">
                             <h3> Au coeur de l'eau Bed and Breakfast </h3>
                             <p> Night starting at <em>71€</em> </p>
-                            <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>    
+                            <div class="starRating" style="--rating: 4;">  </div>    
                         </div>
                         </li>
 
@@ -148,12 +147,12 @@
                         <div class="mostPopularInfo">
                             <h3> Tout bleu et Blanc Hotel</h3>
                             <p> Night starting at <em>68€</em> </p>
-                            <div class="starRating" style="--rating: 4;" aria-label="Rating of this hotel is 4 out of 5.">  </div>                        
+                            <div class="starRating" style="--rating: 4;">  </div>                        
                         </div>
                     </li>
                 </ul>
             </section>
-        </section>
+        </div>
 
         <!-- Activities -->
          <section class="mainActivities" id="goToActivities">
