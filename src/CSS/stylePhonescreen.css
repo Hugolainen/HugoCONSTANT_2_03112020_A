@@ -1,0 +1,693 @@
+@font-face 
+{
+    font-family: 'Raleway-Medium';
+    src: url('/src/Font/Raleway-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'Raleway-Medium', 'droid_sansregular', 'Arial', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Main flex container */
+.bodyFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: inherit;
+}
+
+/* ****************** */
+/* Menu bar with logo */
+/*                    */
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    flex-wrap: wrap;
+    width: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.mainHeader span, .mainHeader div{
+    width:  45%;
+    height: 8rem;
+}
+
+.mainHeader :nth-child(2){
+    width: 100%;
+    order: 3;
+}
+.mainHeader :nth-child(3){
+    order: 2;
+}
+
+/* Logo */
+.mh-logo img{
+    /* width="170" height="95" */
+    padding: 0 2rem;
+    height: 8rem;
+    text-align: left;
+}
+
+/* Sign up */
+#signUp
+{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 0 2rem;
+    margin-top: 4rem;
+    text-decoration: none;
+}
+
+#signUp a{
+    text-decoration: none; 
+}
+
+#signUp a:hover{
+    text-decoration: none; 
+}
+#signUp a:visited {
+    text-decoration: none;
+    color: rgb(0,101,252);
+}
+
+/* Navigation */
+.mainNavigation {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    width: 100%;
+
+    border-bottom: 4px solid rgb(242,242,242);
+}
+
+.mainNavigation div{
+    font-size: 2.5em;
+    width: 50%;
+}
+
+/* Navigation : pseudo-formating */
+.mainNavigation a{
+    text-decoration: none;
+}
+
+.mainNavigation a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.mainNavigation :hover{
+    border-bottom: 4px solid #0065FC;
+}
+
+.mainNavigation a:hover{
+    color: #0065FC;
+    border-bottom: 0;
+}
+
+/* ****************** */
+/*     Search Bar     */
+/*                    */
+/* Premilary text */
+.mainSearchBar{
+    margin: 1em 2em;
+}
+
+.mainSearchBar h2{
+    font-size: 5vw;
+    margin-bottom: 0;
+   
+}
+.mainSearchBar p{
+    font-size: 3.5vw;
+    margin-top: 0;
+}
+
+.searchBar{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid rgb(242,242,242);
+    border-radius: 1em;
+    height: 5em;
+}
+
+/* Icone */
+.searchBar i{
+    background-color: rgb(242,242,242);
+    height: inherit;
+    width: 3em;
+    font-size: 3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+    border: 1px solid  rgb(242,242,242);
+}
+
+/* Textbox */
+.searchBar input{
+    border: 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    
+    padding: 0;
+    padding-left: 1rem;
+    height: inherit;
+
+    border-top: 1px solid  rgb(242,242,242);
+    border-bottom: 1px solid rgb(242,242,242);
+}
+
+.searchBar input:focus{
+    outline: none;
+}
+
+/* Search button */
+.searchBar button{
+    background-color: #0065FC;
+    color: white;
+    font-size: 0.9em;
+
+    height: inherit;
+    width: 4rem;
+
+    border-radius: 1em;
+    border: 0;
+}
+
+#submitDesktop{
+    visibility: hidden;
+}
+
+.searchBar button:focus{
+    border:0;
+    outline: 0;
+}
+
+.searchBar button:active{
+    border:0;
+    outline: 0;
+    border-bottom: 3px solid #0082fc;
+    border-right: 3px solid #0082fc;
+}
+
+/* ****************** */
+/*       Filter       */
+/*                    */
+.mainFilter{
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    flex-wrap: wrap;
+
+    margin-bottom: 0px;
+    margin-left: 2em;
+}
+
+/* Filter title */
+.mainFilter h2{
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+}
+
+/* Filter list */
+.filterList{
+    display: flex;
+    justify-items: flex-start;
+    align-content: flex-start;
+
+	list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+/* Filter items */
+.filterList li{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap:wrap;
+
+    font-size: 2.5em;
+    font-weight: bold;
+
+    height: 3em;
+    box-sizing: border-box;
+    padding-right: 1em;
+    margin: 0 0.5em 0.5em 0;
+
+    border-top: 3px solid rgb(200,200,200);
+    border-bottom: 3px solid  rgb(200,200,200);
+    border-right: 3px solid  rgb(200,200,200);
+    border-radius: 2em;
+}
+
+/* Filter item icon */
+.filterList i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:#DEEBFF;
+    color: #0065FC;
+
+    font-size: 1em;
+    width: 3em;
+    height: inherit;
+    margin-right: 0.5em;
+
+    border-radius: 50%;
+}
+
+/* Filter item icon : pseudo-code */
+.filterList li:hover{
+    color: #0065FC;
+    background-color: rgb(242,242,242);
+
+}
+
+/* Info icon */
+#infoIcon i{
+    color: #0065FC;
+    background-color: white;
+
+    text-align: center;
+    font-size: 1.8em;
+    width: 1em;
+    margin: 0em 0 1em 0;
+    float: left;
+    
+    margin: 1em 1em;
+    margin-left: 1em;
+    padding: 0.4em;
+    border-radius: 50%;
+    border: 2px solid rgb(200,200,200);
+}
+
+#infoIcon p{
+    font-size: 1.5em;
+    padding: 0.8em 1em 0 1em;
+    overflow: visible;
+    word-wrap: break-word;
+}
+
+/* ****************** */
+/*    Accommodation   */
+/*                    */
+.mainAccomodation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Re-organisation of Most-popular & Accomodation Boxes */
+.mainAccomodation :nth-child(1){
+    order: 2;
+}
+.mainAccomodation :nth-child(2){
+    order: 1;
+}
+.mostPopularBox :nth-child(1){
+    order: initial;
+}
+.accommodationBox :nth-child(1){
+    order: initial;
+}
+.accommodationBox :nth-child(2){
+    order: initial;
+}
+.accommodationBox :nth-child(3){
+    order: initial;
+}
+
+/* AccommodationBox - column flex */
+.accommodationBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+    margin-right: 1em;
+    padding: 1em 2em;
+}
+
+.accommodationBox h2, .accommodationBox h4{
+    margin: 0.5em 1em;
+    padding: 0;
+}
+
+.accommodationBox h2{
+    font-size: 3.5em;
+    font-weight: bolder;
+
+}
+
+.accommodationBox h4{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+/* AccommodationList - flex */
+.accommodationList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+    list-style: none;
+    flex-wrap:wrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* AccommodationList - items */
+.accommodationList li{
+    background-color: white;
+
+    box-shadow: 0px 0px 5px #BBBBBB;
+    padding: 0.8em;
+    margin: 1.5em 1em;
+    border-radius: 1em;
+    
+    width: 100%;
+}
+
+/* AccommodationList - item title */
+.accommodationList h3{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 0.5em 0 0 20px;
+}
+
+/* AccommodationList - item image */
+.accommodationList li img{
+    width: 100%;
+    height: 18em;
+
+    object-fit: cover;
+
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+/* AccommodationList - item descirption */
+.accommodationList p{
+    font-size: 0.9em;
+    margin: 0.5em 0;
+    margin-left: 20px;
+}
+
+/* AccommodationList - item price */
+.accommodationList li em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.accommodationList .starRating{
+    padding: 0;
+    padding-bottom: 20px;
+    margin:0;
+    margin-left: 20px;
+    justify-self: flex-end;
+    font-size: 4em;
+}
+
+/* ****************** */
+/*    Most Popular    */
+/*                    */
+.mostPopularBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+    margin: 1em 0;
+    padding: 1em 2em;
+    background-color: rgb(242,242,242);
+}
+
+/* Most Popular Box - list title */
+.mostPopularBox h2{
+    margin: 0.5em 1em;
+    padding: 0;
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+/* Most Popular Box - icone */
+.mostPopularBox i{
+    float: right;
+}
+
+/* Most Popular Box - List */
+.mostPopularList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Most Popular list - items */
+.mostPopularList li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    box-shadow: 0px 0px 3px #BBBBBB;
+
+    background-color: white;
+    border-radius: 1em;
+    margin: 0.6em 0;
+    padding: 0.4em;
+}
+
+.mostPopularList li:nth-child(1){
+    margin: 0;
+    margin-bottom: 0.6em;
+}
+
+/* Most Popular list - items image */
+.mostPopularList li img{
+    width:20em;
+    min-width: 20em;
+    height: 18em;
+    object-fit: cover;
+
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+/* Most Popular list - items description */
+.mostPopularInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-left: 1em;
+    height: inherit;
+}
+
+.mostPopularInfo :nth-child(3){
+    order: 3;
+}
+
+.mostPopularInfo h3 {
+    padding: 0;
+    margin:0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+.mostPopularInfo p {
+    padding: 0;
+    margin:0;
+    font-size: 3em;
+}
+
+.mostPopularInfo p em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.mostPopularInfo .starRating{
+    padding: 0;
+    padding-bottom: 0.4em;
+    margin:0;
+    justify-self: flex-end;
+    font-size: 4em;
+}
+
+/* ****************** */
+/*      Activites     */
+/*                    */
+.partTitle{
+    font-size: 2em;
+    padding: 0;
+    margin: 1em 2em;
+}
+
+/* activitiesList - box */
+.mainActivities
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* activitiesList - flex */
+.activitiesList{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    list-style: none;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* activitiesList - items */
+.activitiesList li{
+    background-color: white;
+
+    box-shadow: 0px 0px 5px #BBBBBB;
+    padding: 0.8em;
+    margin: 1.5rem 1rem;
+    border-radius: 1rem;
+    
+    width: 100%;
+}
+
+/* activitiesList - item title */
+.activitiesList h3{
+    font-size: 2.9rem;
+    font-weight: bolder;
+    margin: 0.5rem 0 0 0;
+}
+
+/* activitiesList - item image */
+.activitiesList li img{
+    width: 100%;
+    height: 18rem;
+
+    object-fit: cover;
+
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* ****************** */
+/*       Footer       */
+/*                    */
+.mainfooter{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(242,242,242);
+    width: 100%;
+    margin: 0;
+    padding: 1rem 4rem;
+}
+
+/* Footer - List */
+.mainfooter ul{
+    list-style: none;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+/* Footer - List items */
+.mainfooter li{
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Footer - titles */
+.mainfooter em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Footer - Pseudo code */
+.mainfooter li a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainfooter li a:visited{
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+
+.mainfooter li a:hover{
+    text-decoration: underline;
+}
+
+
+/* ****************** */
+/*     Star rating    */
+/*                    */
+:root {
+    --star-size: 1.5em;
+    --star-color: rgb(242,242,242);
+    --star-background: rgb(0,101,252);
+  }
+
+.starRating {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times; 
+    line-height: 1;
+}
+
+.starRating::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
