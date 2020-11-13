@@ -3,7 +3,7 @@
 
     <head> 
         <meta charset="utf-8" />
-        <title> Project 1 </title>
+        <title> Reservia - Home page </title>
         <link rel="stylesheet" media="all and (min-device-width: 479px)" href="/src/CSS/styleDeskscreen.css" />
         <link rel="stylesheet" media="all and (max-device-width: 480px)" href="/src/CSS/stylePhonescreen.css" " type="text/css">
         <script src="https://kit.fontawesome.com/6fcdcaea13.js" crossorigin="anonymous"></script>
@@ -11,73 +11,68 @@
 
     <body class=bodyFlex>
         <header class = "mainHeader">
-                <span class="mh-logo">
-                    <img src="/src/Images/Reservia.png" alt="logo Reservia"/>
+            <div class="mh-logo">
+                <img src="/src/Images/Reservia.png" alt="logo Reservia"/>
+            </div>
+
+            <nav class="mainNavigation">
+                <span>
+                    <a href="#goToAccommodation"> Accomodations </a>
                 </span>
+                <span>
+                    <a href="#goToActivities"> Activities </a>
+                </span>
+            </nav>
 
-                <nav class="mainNavigation">
-                    <div>
-                        <a href="#goToAccommodation"> Accomodations </a>
-                    </div>
-                    <div>
-                        <a href="#goToActivities"> Activities </a>
-                    </div>
-                </nav>
-
-                <div id="signUp">
-                    <a href="#"> Sign up </a>
-                </div>
+            <div id="signUp">
+                <a href="#"> Sign up </a>
+            </div>
         </header>
 
         <!-- SearchBar -->
-        <div class="mainSearchBar">
-            <h2> Find a place for your dream vacation </h2>
+        <section class="mainSearchBar">
+            <h1> Find a place for your dream vacation </h2>
             <p> Downtown or in nature </p>
-
             <div class="searchBar">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="text" placeholder="Search..">
-                <button type="submit" id="submitDesktop"> Search </button>
-                <button type="submit" id="submitPhone"> <i class="fas fa-search"></i> </button>                 
+                <button type="submit"> Search </button>                
             </div>
-        </div>
+        </section>
 
         <!-- Filter -->
-        <div class="mainFilter">
-            <h2> 
-                Filters
-            </h2>
+        <section class="mainFilter">
+            <p class="subCategorieText"> Filters </p>
 
-            <ul class="filterList">
+            <ul class=" filterList">
                 <li>
                     <i class="fas fa-money-bill-wave"></i>
-                    Low cost
+                    <strong> Low cost </strong>
                 </li>
                 <li>
                     <i class="fas fa-child"></i>
-                    Family-friendly
+                    <strong>Family-friendly </strong>
                 </li>
                 <li>
                     <i class="fas fa-heart"></i>
-                    Romantic
+                    <strong>Romantic</strong>
                 </li>
                 <li>
                     <i class="fas fa-dog" ></i>
-                    Pets allowed
+                    <strong>Pets allowed</strong>
                 </li>
             </ul>
-        </div>
 
-        <div id="infoIcon">
-            <i class="fas fa-info" ></i>
-            <p> More than 500 accommodations are available in this city </p>
-        </div>    
+            <div id="infoIcon">
+                <i class="fas fa-info" ></i>
+                <p> More than 500 accommodations are available in this city </p>
+            </div>    
+        </section>
 
         <!-- Accommodations -->
-        <div class="mainAccomodation" id="goToAccommodation">
-
+        <section class="mainAccomodation" id="goToAccommodation">
             <!-- Accommodation - List -->
-            <div class="accommodationBox">
+            <section class="accommodationBox">
                 <h2> Accomodations in Marseille </h2>
                 <ul class="accommodationList"> 
                     <li>
@@ -121,20 +116,17 @@
                         <p> Night starting at <em>96€</em> </p>
                         <div class="starRating" style="--rating: 5;" aria-label="Rating of this hotel is 5 out of 5.">  </div>
                     </li>
-
-
-                    
                 </ul>
-                <h4> Show more </h3>
-            </div>
+                <p class="subCategorieText"> Show more </p>
+            </section>
                 
             <!-- Accommodations - Most Popular -->
-            <div class="mostPopularBox"> 
+            <section class="mostPopularBox"> 
                 <h2> Most Popular <i class="fas fa-chart-line"></i>  </h2>
                 
                 <ul class="mostPopularList"> 
                     <li>
-                        <div> <img src="/src/Images/accommodations/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image: Auberge de la cannebière"/> </div>
+                        <span> <img src="/src/Images/accommodations/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image: Auberge de la cannebière"/> </span>
                         <div class="mostPopularInfo">
                             <h3>Morning Sun Hotel </h3>
                             <p> Night starting at <em>128€</em> </p>
@@ -143,7 +135,7 @@
                     </li>
 
                     <li>
-                        <div> <img src="/src/Images/accommodations/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image: Hôtel du port"/> </div>
+                        <span> <img src="/src/Images/accommodations/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image: Hôtel du port"/> </span>
                          <div class="mostPopularInfo">
                             <h3> Au coeur de l'eau Bed and Breakfast </h3>
                             <p> Night starting at <em>71€</em> </p>
@@ -152,7 +144,7 @@
                         </li>
 
                     <li>
-                        <div> <img src="/src/Images/accommodations/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image: Tout bleu et Blanc Hotel"/> </div>
+                        <span> <img src="/src/Images/accommodations/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image: Tout bleu et Blanc Hotel"/> </span>
                         <div class="mostPopularInfo">
                             <h3> Tout bleu et Blanc Hotel</h3>
                             <p> Night starting at <em>68€</em> </p>
@@ -160,12 +152,13 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </section>
+        </section>
 
         <!-- Activities -->
-        <h2 class="partTitle"> Activities in Marseille </h2>
-         <div class="mainActivities" id="goToActivities">
+         <section class="mainActivities" id="goToActivities">
+            <h2> Activities in Marseille </h2>
+
             <ul class="activitiesList">
                 <li>
                     <span><img src="/src/Images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image: Old Port"/> </span>
@@ -197,19 +190,19 @@
                     <h3>Longchamp Park</h3>
                 </li>
             </ul>
-        </div>
+        </section>
         
         <!-- Footer -->
-        <div class="mainfooter">
+        <footer class="mainfooter">
             <ul> 
-                <li><em>About</em> </li>
+                <li> <em>About</em> </li>
                 <li> <a href="#"> Site Map </a></li>
                 <li> <a href="#"> General Terms and Conditions </a></li>
                 <li> <a href="#"> Data and Privacy </a></li>
             </ul>
 
             <ul> 
-                <li><em>Our Accommodations</em> </li>
+                <li> <em>Our Accommodations</em> </li>
                 <li> <a href="#"> Quality Assessment </a> </li>
                 <li> <a href="#"> You have a hotel? </a> </li>
             </ul>
@@ -219,6 +212,6 @@
                 <li> <a href="#"> Help Desk </a> </li>
                 <li> <a href="#"> Contact Us </a> </li>
             </ul>
-        </div>   
+        </footer>   
     </body>
 </html>
