@@ -12,7 +12,6 @@ body
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: red;
 }
 
 h1{
@@ -236,7 +235,7 @@ em{
 
 	list-style: none;
     flex-wrap: wrap;
-    margin-top: -1rem;
+    margin-top: -6rem;
 }
 
 .mainFilter :first-child{
@@ -291,7 +290,7 @@ em{
 
 /* Info icon */
 #infoIcon{
-    margin: 2rem ;
+    margin: -3rem 2rem ;
     width: 100%;
 }
 
@@ -477,8 +476,8 @@ em{
 /* activitiesList - box */
 .mainActivities{
     margin: 2rem 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: -15rem;
+    margin-top: -3rem;
 }
 
 /* activitiesList - flex */
