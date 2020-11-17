@@ -273,7 +273,7 @@ em{
 /* Info icon */
 #infoIcon{
     margin: 0 0 1rem 1rem;
-    width: 50%;
+    width: 80%;
 }
 
 #infoIcon i{
@@ -532,7 +532,7 @@ em{
     flex-direction: row;
     justify-content: space-evenly;
     background-color:  rgb(242,242,242);
-    margin-top:4rem;
+    margin-top:3rem;
 }
 
 /* Footer - List */
@@ -545,7 +545,7 @@ em{
 /* Footer - List items */
 .mainfooter li{
     font-size: 1.5rem;
-    margin: 0.5rem
+    margin: 0.5rem;
 }
 
 /* Footer - Pseudo code */
@@ -617,6 +617,51 @@ em{
         font-size: 1rem;
         padding: 0.3rem 0.4rem;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .mainNavigation span, #signUp{
+        font-size: 1.3rem;
+        min-width: 9rem;
+    }
+
+    .mainAccomodation{
+        flex-wrap: wrap;
+        margin-left: 2rem;
+    }
+    .accommodationBox{
+        width: 100%;
+    }
+
+    .accommodationBox{
+        margin-bottom: 1em;
+    }
+
+    .accommodationList li img{
+        height: 9em;
+        width: 19em;
+    }
+
+    .mostPopularBox{
+        width: 100%;
+    }
+
+    .activitiesList h3{
+        font-size: 0.85rem;
+        padding: 0.3rem 0.4rem;
+    }
+
+    .mainfooter{
+        margin-left: 1.8rem;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+
+    .mainfooter li{
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
 }
 
 
