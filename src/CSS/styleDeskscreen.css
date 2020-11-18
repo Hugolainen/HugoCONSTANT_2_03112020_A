@@ -18,7 +18,7 @@ body
 
 h1{
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 2rem;
 }
 
@@ -35,7 +35,7 @@ h3{
 
 h1 + p{
     font-size: 1.3rem;
-    margin: 2rem;
+    margin: 1rem 2rem;
     margin-top: -1rem;
 }
 
@@ -82,10 +82,12 @@ em{
 /* Logo */
 .mh-logo img{
     height: auto;
-    width: 13rem;
+    width: 10rem;
     text-align: left;
     padding: 1rem;
     box-sizing: border-box;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* Sign up */
@@ -95,8 +97,8 @@ em{
     font-size: 1.5rem;
     font-weight: bold;
     text-align: right;
-    color: rgb(0,101,252);
-    padding: 3.5rem;
+    color: rgb(81, 126, 192);
+    padding: 1rem;
 }
 
 /* Navigation */
@@ -136,23 +138,19 @@ em{
 .searchBar{
 	display: flex;
 	align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
 
-    border-bottom: 2px solid rgb(242,242,242);
-    border-top: 2px solid rgb(242,242,242);
-    border-radius: 1em;
-    height: 4.5rem;
-    margin: 2rem 1rem;
-    width: fit-content;
+    height: 3.5rem;
+    margin: 1rem 2em;
 }
 
 /* Icone */
 .searchBar i{
     background-color: rgb(242,242,242);
     height: inherit;
-    width: 4.5rem;
-    font-size: 2rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
 
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -160,6 +158,8 @@ em{
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 /* Textbox */
@@ -174,6 +174,7 @@ em{
     border-bottom: 2px solid rgb(242,242,242);
     border-top: 2px solid rgb(242,242,242);
     box-sizing: border-box;
+
 }
 
 .searchBar input:focus{
@@ -212,6 +213,7 @@ em{
     flex-direction: row;
     justify-items: left;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 /* Filter list */
@@ -614,7 +616,7 @@ em{
     }
 
     .activitiesList h3{
-        font-size: 1rem;
+        font-size: 0.85rem;
         padding: 0.3rem 0.4rem;
     }
 
@@ -623,6 +625,10 @@ em{
         min-width: 9rem;
     }
 
+    .mainfooter li{
+        font-size: 1.1rem;
+        margin: 0.5rem;
+    }
 
 }
 
@@ -654,8 +660,8 @@ em{
     }
 
     .activitiesList h3{
-        font-size: 0.85rem;
-        padding: 0.3rem 0.4rem;
+        font-size: 0.7rem;
+        padding: 0.6rem 0.5rem;
     }
 
     .mainfooter{
@@ -665,7 +671,7 @@ em{
     }
 
     .mainfooter li{
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin: 0.5rem;
     }
 
