@@ -1,5 +1,6 @@
 # Reservia
-OpenClassromms - Front-End developer paht
+OpenClassromms - Front-End developer path
+
 Project2: Turn Mock-ups Into a Web Page
 
 Link to the website :
