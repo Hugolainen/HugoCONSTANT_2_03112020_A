@@ -1,5 +1,6 @@
-# HugoCONSTANT_2_03112020_A
-OpenClassromms : Turn Mock-ups Into a Web Page
+# Reservia
+OpenClassromms - Front-End developer paht
+Project2: Turn Mock-ups Into a Web Page
 
 Link to the website :
 https://hugolainen.github.io/Reservia/public/
